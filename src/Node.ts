@@ -1,9 +1,12 @@
 export class Node<T> {
-  public value: T;
-  public next: T | null;
+  public data: T;
+  public next: Node<T> | null;
 
-  constructor(value: T) {
-    this.value = value;
+  constructor(data: T) {
+    this.data = data;
     this.next = null;
   }
 }
+
+// let myNode = new Node('sakib');
+// console.log(myNode);
